@@ -1,17 +1,20 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"guitarkeegan.com/go/forms"
 )
 
 func setupRouter() *gin.Engine {
 	r := gin.Default()
+	r.LoadHTMLGlob("templates/*.tmpl")
+	r.Static("/public", "./public")
 
-	// Ping test
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "home")
+		c.HTML(http.StatusOK, "index.tmpl", nil)
 	})
 	r.GET("/portfolio", func(c *gin.Context) {
 		c.String(http.StatusOK, "portfolio")
@@ -32,19 +35,20 @@ func setupRouter() *gin.Engine {
 			c.JSON(http.StatusOK, gin.H{"user": "undefined", "status": "no value"})
 		}
 	})
-	r.GET("/api/contact", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"name": "formname", "email": "address"})
+	r.POST("/api/contact", func(c *gin.Context) {
+		var data forms.ContactForm
+		if c.ShouldBind(&data) == nil {
+			log.Println(data.Email)
+			log.Println(data.Message)
+		}
+		// sets the content type as application json
+		c.JSON(http.StatusOK, gin.H{"email": data.Email, "message": data.Message})
 	})
-	r.GET("/api/chat", func(c *gin.Context) {
-		c.String(http.StatusOK, "contact")
+	r.POST("/api/chat", func(c *gin.Context) {
+		c.String(http.StatusOK, "chat")
 	})
 	return r
 }
-
-// api routes
-// r.POST("/api/contact", func(c *gin.Context){
-// 	return
-// })
 
 func main() {
 	r := setupRouter()

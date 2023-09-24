@@ -1,0 +1,25 @@
+:root {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+   display: grid; 
+}
+
+/* force cover */
+#main-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
