@@ -20,6 +20,11 @@ main {
     height: 100vh;
 }
 
-.left-card {
+.card-wrapper {
+    position: relative;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#home-img{
+    width: 100%;
 }
