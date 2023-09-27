@@ -1,29 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>guitarkeegan</title>
-    <link rel="stylesheet" href="public/css/globalStyles.css">
-</head>
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <link rel="stylesheet" href="/public/css/global.css" />
+  </head>
 
-<body>
-    <main>
-        <img id="main-bg" src="public/images/trebleOnLeftGrass-fs8.png" alt="a treble clef, grass, rain">
-        <section class="card-wrapper">
-            <div class="left-card">
-                <img id="home-image" src="public/images/keegan-king.JPG" alt="a picture of Keegan as a king">
+  <body>
+    <main
+      class="bg-[url(/public/images/trebleOnLeftGrass-fs8.png)] bg-cover bg-center w-screen h-screen flex flex-row justify-center items-center gap-12"
+    >
+      <!-- headshot side of card -->
+      <div
+        id="cardWrapper"
+        class="flip-card overflow-hidden lg:w-[400px] h-[600px] bg-Grays-200"
+      >
+        <div class="w-full flip-card-inner">
+          <!-- front card -->
+          <div class="flip-card-front">
+            <img
+              src="/public/images/keegan-king.JPG"
+              alt="headshot of Keegan Anglim"
+            />
+          </div>
+          <!-- end front -->
+          <!-- back of card -->
+          <div class="flip-card-back flex flex-col justify-evenly">
+            <div
+              class="arrow-wrapper flex justify-end cursor-pointer px-4 hover:opacity-50"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="24"
+                viewBox="0 0 52 24"
+                fill="none"
+              >
+                <path
+                  d="M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807611 39.9792 0.807611 39.3934 1.3934C38.8076 1.97919 38.8076 2.92893 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM0 13.5H50V10.5H0V13.5Z"
+                  fill="#80A59A"
+                  fill-opacity="0.78"
+                />
+              </svg>
             </div>
-
-            <!-- this will be the card component -->
-            <div class="right-card">
-
+            <div>
+              <h1 class="font-serif text-4xl text-greens-200">Contact:</h1>
             </div>
-            <!-- end card component -->
-
-        </section>
+            <div class="flex flex-start">
+              <label class="font-serif text-2xl text-greens-200 ps-[64px]" for="email"
+                >email:</label
+              >
+              <input class="email-input" type="email" name="email" id="email" />
+            </div>
+            <div class="flex flex-start" >
+              <label class="font-serif text-2xl text-greens-200 ps-[64px]" for="message"
+                >message:</label
+              >
+            </div>
+            <div>
+              <textarea
+                class="bg-[#1B4538]"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <!-- end back -->
+        </div>
+      </div>
+      <!-- end of headshot -->
+      <div
+        class="lg:w-[400px] h-[600px] flex flex-col justify-evenly items-center"
+        style="background: linear-gradient(180deg, #124708, #158362)"
+      >
+        <div class="text-center flex flex-col gap-4 text-brand-100">
+          <h1 class="text-5xl font-serif">Keegan Anglim</h1>
+          <h2 class="text-2xl font-serif">Software Developer</h2>
+        </div>
+        <div
+          class="flex flex-col font-serif text-center gap-6 text-3xl text-brand-200"
+        >
+          <a href="/portfolio">Portfolio</a>
+          <button id="contact">Contact</button>
+          <a href="/blog">Blog</a>
+        </div>
+      </div>
     </main>
-</body>
-
+    <script src="/public/js/index.js"></script>
+  </body>
 </html>
