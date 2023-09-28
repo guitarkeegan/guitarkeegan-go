@@ -48,11 +48,14 @@
             <div>
               <h1 class="font-serif text-4xl text-greens-200">Contact:</h1>
             </div>
-            <div class="flex flex-start">
+
+
+            <form id="contact-form" class="flex flex-col gap-4">
+            <div class="flex flex-start gap-2">
               <label class="font-serif text-2xl text-greens-200 ps-[64px]" for="email"
                 >email:</label
               >
-              <input class="email-input" type="email" name="email" id="email" />
+              <input class="email-input outline-0 font-serif text-greens-200 text-lg" type="email" name="email" id="email" />
             </div>
             <div class="flex flex-start" >
               <label class="font-serif text-2xl text-greens-200 ps-[64px]" for="message"
@@ -61,13 +64,15 @@
             </div>
             <div>
               <textarea
-                class="bg-[#1B4538]"
+                class="bg-[#1B4538] outline-0 font-serif text-greens-200 text-lg"
                 name="message"
                 id="message"
                 cols="30"
-                rows="10"
+                rows="8"
               ></textarea>
             </div>
+            <button id="send-contact" class="font-serif text-2xl text-greens-200" type="submit">Send</button>
+            </form>
           </div>
           <!-- end back -->
         </div>
@@ -85,7 +90,7 @@
           class="flex flex-col font-serif text-center gap-6 text-3xl text-brand-200"
         >
           <a href="/portfolio">Portfolio</a>
-          <button id="contact">Contact</button>
+          <button id="contact" class="">Contact</button>
           <a href="/blog">Blog</a>
         </div>
       </div>
