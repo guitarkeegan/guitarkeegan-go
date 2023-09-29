@@ -1,12 +1,22 @@
 package main
 
 import (
+	"log"
+
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 	"guitarkeegan.com/go/routes"
 )
 
 func setupRouter() *gin.Engine {
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 	r := gin.Default()
+
+	r.Use(gin.ErrorLogger())
+
 	r.LoadHTMLGlob("templates/*.tmpl")
 	r.Static("/public", "./public")
 
