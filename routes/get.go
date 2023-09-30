@@ -11,7 +11,7 @@ func Home(c *gin.Context) {
 }
 
 func Portfolio(c *gin.Context) {
-	c.String(http.StatusOK, "portfolio")
+	c.HTML(http.StatusOK, "portfolio.tmpl", nil)
 }
 
 func Project(c *gin.Context) {
