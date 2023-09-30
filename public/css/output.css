@@ -552,12 +552,20 @@ video {
   height: 600px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-screen {
   height: 100vh;
 }
 
-.w-full {
-  width: 100%;
+.w-\[260px\] {
+  width: 260px;
+}
+
+.w-\[280px\] {
+  width: 280px;
 }
 
 .w-screen {
@@ -574,6 +582,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -596,16 +608,16 @@ video {
   gap: 3rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -617,26 +629,32 @@ video {
   background-color: rgb(129 142 128 / var(--tw-bg-opacity));
 }
 
+.bg-Grays-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 30 25 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#1B4538\] {
   --tw-bg-opacity: 1;
   background-color: rgb(27 69 56 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\/public\/images\/trebleOnLeftGrass-fs8\.png\)\] {
-  background-image: url(/public/images/trebleOnLeftGrass-fs8.png);
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .bg-center {
   background-position: center;
 }
 
+.p-\[40px\] {
+  padding: 40px;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .ps-\[64px\] {
@@ -700,8 +718,71 @@ video {
   opacity: 0.5;
 }
 
+@media (min-width: 640px) {
+  .sm\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:p-\[40px\] {
+    padding: 40px;
+  }
+
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:ps-\[64px\] {
+    -webkit-padding-start: 64px;
+            padding-inline-start: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
   .lg\:w-\[400px\] {
     width: 400px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:bg-\[url\(\/public\/images\/trebleOnLeftGrass-fs8\.png\)\] {
+    background-image: url(/public/images/trebleOnLeftGrass-fs8.png);
+  }
+
+  .lg\:bg-cover {
+    background-size: cover;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }

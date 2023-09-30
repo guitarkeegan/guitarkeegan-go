@@ -1,4 +1,26 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+@media screen and (max-width: 640px) {
+  .flip-card {
+    display: none;
+  }
+  .flip-card-inner{
+    display: none;
+  }
+  .flip-card-front{
+    display: none;
+  }
+  #headshot {
+    display: none;
+  }
+  .small-card {
+    display: flex;
+  }
+}
+
+.small-card {
+  display: none;
+}
 .flip-card {
   background-color: transparent;
   width: 400px;
@@ -6,6 +28,8 @@
   border: 1px solid #124708;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -40,7 +64,7 @@
 }
 
 textarea {
-  box-shadow: 2px 4px 4px 0px #1A1E19 inset;
+  box-shadow: 2px 4px 4px 0px #1a1e19 inset;
 }
 
 .flipper {
@@ -50,5 +74,5 @@ textarea {
 .email-input {
   border: none;
   background: none;
-  border-bottom: 1px solid rgba(222, 243, 237, 0.78);;
+  border-bottom: 1px solid rgba(222, 243, 237, 0.78);
 }

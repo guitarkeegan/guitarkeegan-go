@@ -10,19 +10,25 @@
 
   <body>
     <main
-      class="bg-[url(/public/images/trebleOnLeftGrass-fs8.png)] bg-cover bg-center w-screen h-screen flex flex-row justify-center items-center gap-12"
+      class="lg:bg-[url(/public/images/trebleOnLeftGrass-fs8.png)] bg-Grays-500 lg:bg-cover bg-center w-screen lg:h-screen flex flex-row justify-center items-center gap-12"
     >
+
+    <section class="flex lg:flex-row flex-col-reverse justify-center items-center gap-12 lg:p-0 lg:py-12">
+
       <!-- headshot side of card -->
+      <!-- left card -->
       <div
         id="cardWrapper"
-        class="flip-card overflow-hidden lg:w-[400px] h-[600px] bg-Grays-200"
+        class="flip-card overflow-hidden sm:w-[400px] w-[280px] md:h-auto lg:h-[600px] bg-Grays-200"
       >
-        <div class="w-full flip-card-inner">
+        <div class="sm:w-full flip-card-inner">
           <!-- front card -->
-          <div class="flip-card-front">
+          <div class="flip-card-front sm:w-full">
             <img
               src="/public/images/keegan-king.JPG"
               alt="headshot of Keegan Anglim"
+              class="sm:w-[400px] w-[280px] h-[600px]"
+              id="headshot"
             />
           </div>
           <!-- end front -->
@@ -52,7 +58,7 @@
 
             <form id="contact-form" class="flex flex-col gap-4">
             <div class="flex flex-start gap-2">
-              <label class="font-serif text-2xl text-greens-200 ps-[64px]" for="email"
+              <label class="font-serif text-2xl text-greens-200 sm:ps-[64px]" for="email"
                 >email:</label
               >
               <input class="email-input outline-0 font-serif text-greens-200 text-lg" type="email" name="email" id="email" />
@@ -77,10 +83,15 @@
           <!-- end back -->
         </div>
       </div>
+      <!-- card on small screen -->
+      <div class="small-card h-[600px], w-[280px] bg-Grays-200  ">
+
+      </div>
       <!-- end of headshot -->
+      <!-- right card -->
       <div
-        class="lg:w-[400px] h-[600px] flex flex-col justify-evenly items-center"
-        style="background: linear-gradient(180deg, #124708, #158362)"
+        class="lg:w-[400px] lg:h-[600px] w-screen h-screen lg:p-0 p-[40px] flex flex-col justify-evenly items-center"
+        style="background: linear-gradient(180deg, #124708, #08158362)"
       >
         <div class="text-center flex flex-col gap-4 text-brand-100">
           <h1 class="text-5xl font-serif">Keegan Anglim</h1>
@@ -90,10 +101,11 @@
           class="flex flex-col font-serif text-center gap-6 text-3xl text-brand-200"
         >
           <a href="/portfolio">Portfolio</a>
-          <button id="contact" class="">Contact</button>
+          <button id="contact">Contact</button>
           <a href="/blog">Blog</a>
         </div>
       </div>
+    </section>
     </main>
     <script src="/public/js/index.js"></script>
   </body>
