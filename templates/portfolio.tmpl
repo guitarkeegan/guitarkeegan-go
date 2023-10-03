@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/public/css/output.css" />
-</head>
-<body class="bg-brand-500">
-   <section class="h-screen flex flex-col justify-evenly items-center">
-    <div class="riddle-card text-brand-100 text-center text-3xl">
+  </head>
+  <body class="bg-brand-500">
+    <section class="h-screen flex flex-col justify-evenly items-center">
+      <div class="riddle-card text-brand-100 text-center text-3xl">
         Solve a quick musical riddle to see my portfolio
-    </div>
-    <div class="keys flex flex-row gap-2 justify-center">
-        <div class="sol w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"></div>
-        <div class="fi w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"></div>
-        <div class="fa w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"></div>
-        <div class="me w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"></div>
-        <div class="re w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"></div>
-        <div class="do w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"></div>
-    </div>
-   </section> 
-</body>
+      </div>
+      <div id="playButton">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="62"
+          height="63"
+          viewBox="0 0 62 63"
+          fill="none"
+        >
+          <path d="M60.5 31L1 1V61.5L60.5 31Z" fill="#C8E7C3" stroke="black" />
+        </svg>
+      </div>
+      <div class="keys flex flex-row gap-2 justify-center">
+        <div
+          class="do w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"
+        ></div>
+        <div
+          class="re w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"
+        ></div>
+        <div
+          class="me w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"
+        ></div>
+        <div
+          class="fa w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"
+        ></div>
+        <div
+          class="fi w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"
+        ></div>
+        <div
+          class="sol w-[35px] h-[35px] bg-greens-200 border-1 rounded-full"
+        ></div>
+      </div>
+    </section>
+    <script src="/public/js/portfolio.js"></script>
+  </body>
 </html>
