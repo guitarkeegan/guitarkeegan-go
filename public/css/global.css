@@ -76,3 +76,9 @@ textarea {
   background: none;
   border-bottom: 1px solid rgba(222, 243, 237, 0.78);
 }
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
