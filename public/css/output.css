@@ -653,6 +653,10 @@ video {
   background-color: rgb(200 231 195 / var(--tw-bg-opacity));
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -771,6 +775,10 @@ video {
 
   .lg\:bg-\[url\(\/public\/images\/trebleOnLeftGrass-fs8\.png\)\] {
     background-image: url(/public/images/trebleOnLeftGrass-fs8.png);
+  }
+
+  .lg\:bg-\[url\(\/public\/images\/greenGrassMusic-fs8\.png\)\] {
+    background-image: url(/public/images/greenGrassMusic-fs8.png);
   }
 
   .lg\:bg-cover {

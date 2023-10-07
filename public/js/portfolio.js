@@ -10,6 +10,7 @@ var done = false;
 
 playButtonEl.addEventListener("click", play);
 const unclickedColor = "rgb(200, 231, 195);"
+doEl.addEventListener("click", enterPorfolio);
 
 function delay() {
     return new Promise((res, reg)=>{
@@ -43,9 +44,14 @@ async function play() {
     faEl.style.backgroundColor = "";
     meEl.style.backgroundColor = "red";
     console.log(await delay());
+    meEl.style.backgroundColor = "";
     done = true;
 }
 
 function enterPorfolio(){
-
+    console.log("entering portfolio...");
+    console.log(window.location.href);
+    if (done){
+        window.location.href = window.location.href + "/pass"
+    }
 }

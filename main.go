@@ -22,6 +22,7 @@ func setupRouter() *gin.Engine {
 
 	r.GET("/", routes.Home)
 	r.GET("/portfolio", routes.Portfolio)
+	r.GET("/portfolio/pass", routes.PortfolioPass)
 	r.GET("/blog", routes.Blog)
 	r.GET("/project", routes.Project)
 	r.GET("/blog/:title", routes.BlogTitle)

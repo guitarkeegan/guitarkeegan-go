@@ -14,6 +14,10 @@ func Portfolio(c *gin.Context) {
 	c.HTML(http.StatusOK, "portfolio.tmpl", nil)
 }
 
+func PortfolioPass(c *gin.Context) {
+	c.HTML(http.StatusOK, "portfolio-pass.tmpl", nil)
+}
+
 func Project(c *gin.Context) {
 	c.String(http.StatusOK, "project")
 }
