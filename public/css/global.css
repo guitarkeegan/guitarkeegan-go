@@ -82,3 +82,10 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
+circle:hover {
+  opacity: 0.5;
+  transition: ease-in-out;
+  transition-property: opacity;
+  transition-duration: 400ms;
+}
