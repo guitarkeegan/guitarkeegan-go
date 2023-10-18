@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-</head>
-<body>
-    <h1>{{.Title}}</h1>
-    <p>{{.P1}}</p>
-    <img src="{{.img1}}" alt="whatever this is">
-</body>
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <link rel="stylesheet" href="/public/css/global.css" />
+  </head>
+  <body>
+    <main
+      class="lg:bg-[url(/public/images/greenGrassMusic-fs8.png)] bg-Grays-500 lg:bg-cover bg-center w-screen lg:h-screen flex flex-row justify-center items-center gap-12"
+    >
+      <div class="dark-screen-wrapper">
+        <div
+          class="flex flex-col items-center overflow-auto gap-12 pt-12 px-64 dark-screen opacity-70 absolute top-6 left-6 right-6 bottom-6"
+          style="background-color: black"
+        >
+          <h1 class="font-serif text-6xl text-greens-200">{{.Title}}</h1>
+          <div class="text-grays-100 text-3xl flex gap-6">
+            <span>Link</span>
+            <span>Live Site</span>
+          </div>
+          <div class="text-grays-100 flex flex-col gap-12">
+            <h2 class="text-3xl">What is it?</h2>
+            <p class="text-lg">{{.P1}}</p>
+          </div>
+          <div class="text-grays-100 flex flex-col gap-12">
+            <h2 class="text-3xl">What is your role?</h2>
+            <p class="text-lg">{{.P2}}</p>
+          </div>
+          <div class="text-grays-100 flex flex-col gap-12">
+            <h2 class="text-3xl">Project status?</h2>
+            <p class="text-lg">{{.P3}}</p>
+          </div>
+
+          <div class="flex flex-col gap-12">
+           <h2 class="text-grays-100 text-3xl">Project images?</h2>
+          </div>
+
+          <div class="flex justify-center max-w-[50%] bg-greens-200 opacity-100">
+            <img
+              height="200px"
+              width="200px"
+              src="{{.Img1}}"
+              alt="whatever this is"
+            />
+            <img
+              height="200px"
+              width="200px"
+              src="{{.Img2}}"
+              alt="whatever this is"
+            />
+            <img
+              height="200px"
+              width="200px"
+              src="{{.Img3}}"
+              alt="whatever this is"
+            />
+            <img
+              height="200px"
+              width="200px"
+              src="{{.Img4}}"
+              alt="whatever this is"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
