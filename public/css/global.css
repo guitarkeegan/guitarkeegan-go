@@ -89,3 +89,7 @@ circle:hover {
   transition-property: opacity;
   transition-duration: 400ms;
 }
+
+.envelope-page {
+  transform: scale(15)
+}

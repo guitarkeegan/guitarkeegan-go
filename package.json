@@ -13,5 +13,8 @@
   "devDependencies": {
     "tailwindcss": "^3.3.3",
     "tailwindcss-3d": "^1.0.1"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
   }
 }

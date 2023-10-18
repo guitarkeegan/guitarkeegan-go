@@ -2,8 +2,10 @@ package routes
 
 import (
 	"net/http"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
+	data "guitarkeegan.com/go/controller"
 )
 
 func Home(c *gin.Context) {
@@ -19,7 +21,14 @@ func PortfolioPass(c *gin.Context) {
 }
 
 func Project(c *gin.Context) {
-	c.String(http.StatusOK, "project")
+	projectId := c.Param("id")
+	num, err := strconv.Atoi(projectId)
+
+	project, err := data.GetProjectById(num)
+	if err != nil {
+		c.JSON(500, gin.H{"error": "Failed to retrieve project"})
+	}
+	c.HTML(http.StatusOK, "project.tmpl", project)
 }
 
 func Blog(c *gin.Context) {
