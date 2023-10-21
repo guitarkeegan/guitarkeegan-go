@@ -10,20 +10,8 @@ main {
 }
 
 @media screen and (max-width: 640px) {
-  .flip-card {
-    display: none;
-  }
-  .flip-card-inner{
-    display: none;
-  }
-  .flip-card-front{
-    display: none;
-  }
-  #headshot {
-    display: none;
-  }
-  .small-card {
-    display: flex;
+  #right-section {
+    gap: 0;
   }
 }
 
@@ -91,6 +79,7 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
 
 circle:hover {
   opacity: 0.5;

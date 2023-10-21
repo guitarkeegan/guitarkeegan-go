@@ -592,6 +592,10 @@ video {
   width: 100vw;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-\[50\%\] {
   max-width: 50%;
 }
@@ -610,6 +614,10 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -671,12 +679,31 @@ video {
   background-color: rgb(200 231 195 / var(--tw-bg-opacity));
 }
 
+.bg-greens-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 71 8 / var(--tw-bg-opacity));
+}
+
+.bg-greens-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 71 8 / var(--tw-bg-opacity));
+}
+
 .bg-center {
   background-position: center;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .p-\[40px\] {
   padding: 40px;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-4 {
@@ -768,13 +795,41 @@ video {
   opacity: 0.7;
 }
 
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
 .outline-0 {
   outline-width: 0px;
+}
+
+.blur-sm {
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-0 {
+  --tw-blur: blur(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transform {
   --webkit-transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
   transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
+}
+
+.backdrop\:blur-sm::backdrop {
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop\:blur-lg::backdrop {
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .hover\:opacity-50:hover {
@@ -790,9 +845,22 @@ video {
     width: 100%;
   }
 
+  .sm\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
   .sm\:ps-\[64px\] {
     -webkit-padding-start: 64px;
             padding-inline-start: 64px;
+  }
+
+  .sm\:pb-12 {
+    padding-bottom: 3rem;
   }
 }
 

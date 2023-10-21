@@ -13,13 +13,13 @@
       class="lg:bg-[url(/public/images/trebleOnLeftGrass-fs8.png)] bg-Grays-500 lg:bg-cover bg-center w-screen lg:h-screen flex flex-row justify-center items-center gap-12"
     >
 
-    <section class="flex lg:flex-row flex-col-reverse justify-center items-center gap-12 lg:py-12 pb-12">
+    <section id="right-section" class="flex lg:flex-row flex-col-reverse justify-center items-center gap-12 lg:py-12 sm:pb-12">
 
       <!-- headshot side of card -->
       <!-- left card -->
       <div
         id="cardWrapper"
-        class="flip-card overflow-hidden sm:w-[400px] w-[280px] md:h-auto lg:h-[600px] bg-Grays-200"
+        class="flip-card overflow-hidden sm:w-[400px] w-full md:h-auto lg:h-[600px] bg-Grays-200"
       >
         <div class="sm:w-full flip-card-inner">
           <!-- front card -->
@@ -27,13 +27,13 @@
             <img
               src="/public/images/keegan-king.JPG"
               alt="headshot of Keegan Anglim"
-              class="sm:w-[400px] w-[280px] h-[600px]"
+              class="sm:w-[400px] w-full h-[600px] sm:object-cover object-contain"
               id="headshot"
             />
           </div>
           <!-- end front -->
           <!-- back of card -->
-          <div class="flip-card-back flex flex-col justify-evenly">
+          <div class="flip-card-back flex flex-col justify-evenly sm:p-0 p-12">
             <div
               class="arrow-wrapper flex justify-end cursor-pointer px-4 hover:opacity-50"
             >

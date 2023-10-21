@@ -32,7 +32,7 @@ func Project(c *gin.Context) {
 }
 
 func Blog(c *gin.Context) {
-	c.String(http.StatusOK, "blog")
+	c.HTML(http.StatusOK, "blog.tmpl", nil)
 }
 
 func BlogTitle(c *gin.Context) {

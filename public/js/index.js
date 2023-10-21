@@ -18,6 +18,7 @@ function cardFlip(){
     contactEl.disabled = true;
     contactEl.style.color = "gray";
     flipCardInnerEl.classList.add("flipper");
+    cardEl.scrollIntoView({behavior: "smooth"});
 }
 
 function cardUnflip(){

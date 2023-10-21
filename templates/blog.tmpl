@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-</head>
-<body>
-   hello blog 
-</body>
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <link rel="stylesheet" href="/public/css/global.css" />
+  </head>
+  <body>
+    <main
+      class="lg:bg-[url(/public/images/trebleOnLeftGrass-fs8.png)] bg-Grays-500 lg:bg-cover bg-center w-screen lg:h-screen flex flex-row justify-center items-center gap-12"
+    >
+      <div class="blog-screen-wrapper">
+        <div
+          class="flex flex-col items-center overflow-auto gap-12 pt-12 px-64 dark-screen opacity-90 absolute top-6 left-6 right-6 bottom-6 bg-greens-700"
+        >
+          <h1 class="font-serif text-6xl text-greens-200">Blog</h1>
+
+          <div class="text-grays-100 flex flex-col gap-4 items-start w-full">
+            <h2 class="text-3xl">Latest</h2>
+            <p class="text-lg">My most recent post</p>
+          </div>
+
+          <div class="text-grays-100 flex flex-col gap-4 items-start w-full">
+            <h2 class="text-3xl">Past Posts</h2>
+            <p class="text-lg">list of my past posts</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
