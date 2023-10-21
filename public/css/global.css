@@ -4,6 +4,11 @@
   width: 10px;
 }
 
+main {
+  filter: brightness(1);
+  transition: all 1s;
+}
+
 @media screen and (max-width: 640px) {
   .flip-card {
     display: none;
@@ -91,9 +96,13 @@ circle:hover {
   opacity: 0.5;
   transition: ease-in-out;
   transition-property: opacity;
-  transition-duration: 400ms;
+  transition-duration: 500ms;
 }
 
-.envelope-page {
-  transform: scale(15)
+.circ-trans-1 {
+  filter: brightness(.1);
+}
+
+.fade-in {
+  filter: brightness(1);
 }

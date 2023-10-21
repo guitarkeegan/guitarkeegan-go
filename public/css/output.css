@@ -548,26 +548,6 @@ video {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.bottom-4 {
-  bottom: 1rem;
-}
-
 .bottom-6 {
   bottom: 1.5rem;
 }
@@ -584,16 +564,8 @@ video {
   top: 1.5rem;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .h-\[35px\] {
@@ -620,24 +592,12 @@ video {
   width: 100vw;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .max-w-\[50\%\] {
   max-width: 50%;
 }
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -654,10 +614,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
@@ -696,10 +652,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -719,21 +671,12 @@ video {
   background-color: rgb(200 231 195 / var(--tw-bg-opacity));
 }
 
-.bg-grays-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 30 25 / var(--tw-bg-opacity));
-}
-
 .bg-center {
   background-position: center;
 }
 
 .p-\[40px\] {
   padding: 40px;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .px-4 {
@@ -744,11 +687,6 @@ video {
 .px-64 {
   padding-left: 16rem;
   padding-right: 16rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pb-12 {
@@ -766,10 +704,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-start {
-  text-align: start;
 }
 
 .font-serif {
@@ -796,23 +730,13 @@ video {
   line-height: 1;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -836,20 +760,12 @@ video {
   color: rgb(200 231 195 / var(--tw-text-opacity));
 }
 
-.opacity-80 {
-  opacity: 0.8;
+.opacity-100 {
+  opacity: 1;
 }
 
 .opacity-70 {
   opacity: 0.7;
-}
-
-.opacity-0 {
-  opacity: 0;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .outline-0 {
@@ -903,10 +819,6 @@ video {
     flex-direction: row;
   }
 
-  .lg\:overflow-hidden {
-    overflow: hidden;
-  }
-
   .lg\:bg-\[url\(\/public\/images\/greenGrassMusic-fs8\.png\)\] {
     background-image: url(/public/images/greenGrassMusic-fs8.png);
   }
@@ -926,9 +838,5 @@ video {
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .lg\:hover\:overflow-auto:hover {
-    overflow: auto;
   }
 }
