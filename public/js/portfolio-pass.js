@@ -9,3 +9,9 @@ circle1El.addEventListener("click", function () {
     mainEl.classList.add("circ-trans-1");
     window.location.href = window.location.href.replace("/pass", "/1");
 });
+
+circle2El.addEventListener("click", function () {
+    console.log("clicked circle 2")
+    mainEl.classList.add("circ-trans-1");
+    window.location.href = window.location.href.replace("/pass", "/2");
+});

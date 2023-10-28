@@ -18,9 +18,9 @@ type Project struct {
 	Img2         string  `json:"img2"`
 	Img3         string  `json:"img3"`
 	Img4         string  `json:"img4"`
-	Contributor1 string  `json:"contributor1"`
-	Contributor2 string  `json:"contributor2"`
-	Contributor3 string  `json:"contributor3"`
+	Contributor1 *string `json:"contributor1"`
+	Contributor2 *string `json:"contributor2"`
+	Contributor3 *string `json:"contributor3"`
 	Contributor4 *string `json:"contributor4"`
 }
 
