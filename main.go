@@ -1,18 +1,18 @@
 package main
 
 import (
-	"log"
+	// "log"
 
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 	"guitarkeegan.com/go/routes"
 )
 
 func setupRouter() *gin.Engine {
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	// err := godotenv.Load(".env")
+	// if err != nil {
+	// 	log.Fatal("Error loading .env file")
+	// }
 	r := gin.Default()
 
 	r.Use(gin.ErrorLogger())
